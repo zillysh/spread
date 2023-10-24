@@ -1,3 +1,307 @@
-h1{
-  color: tomato;
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Gabarito:wght@400;500;600;700;800&family=Modak&display=swap');
+
+/* web font */
+@font-face {
+  font-family:"HelveticaNeue";
+  src: url("fonts/helvetica-neue/Helvetica\ Neue.ttf");
+}
+
+/*set the default font*/
+h1,h2{
+  font-weight:normal;
+  font-size: 16px;
+  color: black;
+}
+
+ul,ol,li{
+  list-style: none;
+}
+
+a{
+  color:black;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+.flx-a-c{
+  display: flex;
+  align-items: center;
+}
+
+main{
+  padding-top: 54px;
+  max-width:375px;
+  margin:auto;
+  width:100%;
+}
+
+header{
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 23px;
+  border-bottom:1px solid;
+}
+
+header h1{
+  font-family: 'Gabarito', sans-serif;
+  font-weight:600;
+  font-size: 20px;
+}
+
+.m-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18px;
+}
+
+.m-btn .line{
+  width:18px;
+  height:2px;
+  background:black;
+}
+
+.main-title{
+  width:321px;
+  margin:50px auto 70px;
+}
+
+.main-title p {
+  font-family: 'Gabarito', sans-serif;
+  font-weight:600;
+  font-size: 70px;
+  line-height: 55px;
+}
+
+.main-title p.author{
+  margin-top: 30px;
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  font-size:13px;
+}
+
+/* contents */
+section.menu-part{
+  margin-top: 80px;
+}
+
+.menu{
+  box-sizing: border-box;
+  border-bottom: 1px solid;
+  position:relative;
+}
+
+.menu li{
+  border-top:1px solid;
+  padding-left: 28px;
+}
+
+.menu.headTitle a{
+  font-family: 'Gabarito', sans-serif;
+  font-weight:600;
+}
+
+.menu a{
+  font-family: 'Gabarito', sans-serif;
+  font-weight:600;
+  font-size: 23px;
+  line-height: 60px;
+}
+
+li.clickbutton{
+  position: absolute;
+  top: -65px;
+  left: 264px;
+  width: 77px;
+  height: 77px;
+  border: 1px solid;
+  border-radius: 39px;
+  padding-left: 0;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  display: flex;
+}
+
+li.clickbutton a{
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.clickbutton p{
+  text-align: center;
+  font-family: 'Gabarito', sans-serif;
+  font-weight:500;
+}
+
+section.part{
+  text-align: center;
+}
+
+section.title-part{
+  border:1px solid;
+  border-left: none;
+  border-right:none;
+  padding-left: 27px;
+  box-sizing: border-box;
+}
+
+section.title-part h2{
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+/* Part1 THE CONTEXT */
+.part1 {
+  margin-top:79px;
+}
+
+.part1 h2{
+  width: 136px;
+}
+
+.a1{
+  margin-top: 40px;
+  width: 324px;
+  margin-left: 27px;
+}
+
+article p {
+  font-family: HelveticaNeue;
+  font-size:16px;
+  margin-bottom: 30px;
+}
+
+/* to set the first letter of each paragraph is capital */
+article p:first-letter{
+  text-transform:uppercase;
+}
+
+/* Part2 WHAT IS AUTO-TUNE TYPE */
+.part2{
+  margin-top: 60px;
+}
+
+.part2 h2{
+  width: 242px;
+}
+
+.part2-desc {
+  width: 321px;
+  margin:50px auto 40px;
+}
+
+.part2-desc p{
+  font-family: 'Gabarito', sans-serif;
+  font-weight:500;
+  font-size:33px;
+  line-height:30px;
+  text-align:center;
+}
+
+.a2{
+  width:321px;
+  margin-top: 30px;
+  margin-left: 27px;
+}
+
+/* Part3 THE IMPACT */
+.part3{
+  margin-top: 60px;
+}
+
+.part3 h2 {
+  width: 126px;
+}
+
+.a3{
+  width: 317px;
+  margin-top: 60px;
+  margin-left:27px ;
+}
+
+.a4,.a5{
+  width: 321px;
+  margin-top: 60px;
+  margin-left: 27px;
+}
+
+/* Part4 WHAT SHOULD WE DO */
+.part4{
+  margin-top: 80px;
+}
+.part4 h2{
+  width: 194px;
+}
+
+/* Part5 THE CONCLUSION */
+.part5 h2{
+  width: 165px;
+}
+
+/* Part6  */
+.title-part.part6{
+  position: relative;
+  padding-left: 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.title-part.part6 h2{
+  border: none;
+  border-right: none;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.part6 .topp{
+  position: absolute;
+  left: 294px;
+  top:-50px;
+  width:57px;
+  height:57px;
+  border-radius:50%;
+  border:1px solid;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background-color: white;
+}
+
+.top-btn{
+  position:relative ;
+  width: 30px;
+  height:30px;
+  cursor:pointer;
+}
+
+.top-btn::before{
+  content: "";
+  width: 10px;
+  height:10px;
+  border: solid;
+  border-width:2px 2px 0 0;
+  transform: translate(-50%,-50%) rotate(-45deg); 
+  position:absolute;
+  left:50%;
+  top:45%;
+}
+/* rotate:(-45deg)= to rotate 45 degrees counterclockwise */
+
+.top-btn::after{
+  content: "";
+  width:2px;
+  height:18px;
+  background: black;
+  position: absolute;
+  top: 25%;
+  left:47%;
 }
