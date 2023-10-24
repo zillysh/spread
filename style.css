@@ -33,7 +33,6 @@ a:hover{
 
 main{
   padding-top: 54px;
-  max-width:375px;
   margin:auto;
   width:100%;
 }
@@ -70,7 +69,7 @@ header p{
   background:black;
 }
 
-/* contents */
+/* HOMEPAGE */
 .main-title{
   width:321px;
   margin:50px auto 70px;
@@ -130,7 +129,7 @@ li.clickbutton{
   font-weight:500;
 }
 
-/* LATER */
+/* ARTICLE HEADINGS */
 
 section.part{
   text-align: center;
