@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Gabarito:wght@400;500;600;700;800&family=Modak&display=swap');
 
+/*FONTS*/
+:root {
+	--font-gabarito: 'Gabarito', sans-serif;
+	--font-dm-mono: 'DM Mono', monospace;
+	--font-helvetica-neue: 'HelveticaNeue', sans-serif;
+}
+
+/*FONT DESCRPTIONS*/
+
 /* web font */
 @font-face {
   font-family:"HelveticaNeue";
@@ -13,10 +22,6 @@ h1,h2{
   color: black;
 }
 
-ul,ol,li{
-  list-style: none;
-}
-
 a{
   color:black;
   text-decoration: none;
@@ -26,11 +31,6 @@ a:hover{
   text-decoration:underline;
 }
 
-.flx-a-c{
-  display: flex;
-  align-items: center;
-}
-
 main{
   padding-top: 54px;
   max-width:375px;
@@ -38,6 +38,7 @@ main{
   width:100%;
 }
 
+/*HEADER ELEMENTS*/
 header{
   justify-content: space-between;
   box-sizing: border-box;
@@ -45,32 +46,38 @@ header{
   border-bottom:1px solid;
 }
 
-header h1{
-  font-family: 'Gabarito', sans-serif;
+header p{
+  font-family: var(--font-gabarito);
   font-weight:600;
   font-size: 20px;
 }
 
-.m-btn{
+.header-container{
+    display: flex;
+    align-items: center;
+  }
+
+.menu-button{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 18px;
 }
 
-.m-btn .line{
+.menu-line{
   width:18px;
   height:2px;
   background:black;
 }
 
+/* contents */
 .main-title{
   width:321px;
   margin:50px auto 70px;
 }
 
 .main-title p {
-  font-family: 'Gabarito', sans-serif;
+  font-family: var(--font-gabarito);
   font-weight:600;
   font-size: 70px;
   line-height: 55px;
@@ -78,37 +85,26 @@ header h1{
 
 .main-title p.author{
   margin-top: 30px;
-  font-family: 'DM Mono', monospace;
+  font-family: var(--font-dm-mono);
   font-weight: 500;
   font-size:13px;
 }
 
-/* contents */
-section.menu-part{
-  margin-top: 80px;
-}
-
+/* NAVIGATION */
 .menu{
+  font-family: var(--font-gabarito);
+  font-weight:600;
+  margin-top: 80px;
   box-sizing: border-box;
   border-bottom: 1px solid;
   position:relative;
+  font-size: 23px;
+  line-height: 60px;
 }
 
 .menu li{
   border-top:1px solid;
   padding-left: 28px;
-}
-
-.menu.headTitle a{
-  font-family: 'Gabarito', sans-serif;
-  font-weight:600;
-}
-
-.menu a{
-  font-family: 'Gabarito', sans-serif;
-  font-weight:600;
-  font-size: 23px;
-  line-height: 60px;
 }
 
 li.clickbutton{
@@ -124,18 +120,17 @@ li.clickbutton{
   justify-content: center;
   background-color: white;
   display: flex;
-}
-
-li.clickbutton a{
   line-height: 20px;
   font-size: 16px;
 }
 
 .clickbutton p{
   text-align: center;
-  font-family: 'Gabarito', sans-serif;
+  font-family: var(--font-gabarito);
   font-weight:500;
 }
+
+/* LATER */
 
 section.part{
   text-align: center;
@@ -150,7 +145,7 @@ section.title-part{
 }
 
 section.title-part h2{
-  font-family: 'DM Mono', monospace;
+  font-family: var(--font-dm-mono);
   font-weight: 500;
   font-size: 16px;
   line-height: 36px;
@@ -175,7 +170,7 @@ section.title-part h2{
 }
 
 article p {
-  font-family: HelveticaNeue;
+  font-family: var(--font-helvetica-neue);
   font-size:16px;
   margin-bottom: 30px;
 }
@@ -200,7 +195,7 @@ article p:first-letter{
 }
 
 .part2-desc p{
-  font-family: 'Gabarito', sans-serif;
+  font-family: var(--font-gabarito);
   font-weight:500;
   font-size:33px;
   line-height:10px;
