@@ -1,3 +1,14 @@
-h1{
-  color: green;
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Gabarito:wght@400;500;600;700;800&family=Modak&display=swap');
+
+h1,h2{
+  font-weight:normal;
+  font-size: 16px;
+  color: black;
+}
+
+.main-title p {
+  font-family: 'Gabarito', sans-serif;
+  font-weight:600;
+  font-size: 70px;
+  line-height: 55px;
 }
