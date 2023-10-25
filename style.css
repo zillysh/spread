@@ -84,6 +84,7 @@
 
   article{
     position:relative;
+    font-size:25px !important;
   }
 
   .part2-desc span{
@@ -98,6 +99,15 @@
   .clickbutton1{
     padding-left: 14px !important;
     box-sizing:border-box;
+  }
+
+  .title-part h2{
+    width: 350px !important;
+    font-size: border-box;
+  }
+
+  .part6 h2{
+    font-size: 30px !important;
   }
 
 }
