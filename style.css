@@ -3,21 +3,31 @@
   .main-title{
     margin:50px !important;
   }
+  .main-title p{
+    width: 420px !important;
+    Font-size:129px !important;
+  }
+
+  .main-title .author{
+    font-size:24px !important;
+  }
+
   .auto_box{
     display:flex;
   }
   .typo_gr{
     display:flex;
   }
+
   .hre_f{
     height:100%;
     border-left:1px solid;
     display:block;
     padding-left:22px;
     border-right:1px solid;
+    font-size: 26 !important;
   }
 
-  
   .clickbutton{
     left:1100px !important;
   }
@@ -30,20 +40,40 @@
     width: 390px !important;
   }
 
+  .a1 p {
+    font-size: 25px !important;
+  }
+
   .a2{
     width:390px !important ;
+  }
+
+  .a2 p{
+    font-size: 25px !important;
   }
 
   .a3{
     width: 390px !important ;
   }
 
+  .a3 p{
+    font-size: 25px !important;
+  }
+
   .a4{
     width: 390px !important ;
   }
 
+  .a4 p{
+    font-size: 25px !important;
+  }
+
   .a5{
     width: 390px !important ;
+  }
+
+  .a5 p{
+    font-size: 25px !important;
   }
 
   .part2-desc{
