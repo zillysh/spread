@@ -1,40 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Gabarito:wght@400;500;600;700;800&family=Modak&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Gabarito:wght@400;500;600;700;800&family=Modak&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* reset margin and padding */
+html,
+div,
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+legend,
+button,
+a,
+img,
+header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* fonts */
+@font-face {
+  font-family: "DMMONO-MEDIUM";
+  src: url("fonts/DM_Mono/DMMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gabarito-Bold";
+  src: url("fonts/Gabarito/static/Gabarito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Gabarito-SemiBold";
+  src: url("fonts/Gabarito/static/Gabarito-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url("fonts/helvetica-neue/HelveticaNeue-Medium.otf");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("fonts/helvetica-neue/Helvetica\ Neue.ttf");
+}
 
 /*FONTS*/
 :root {
-	--font-gabarito: 'Gabarito', sans-serif;
-	--font-dm-mono: 'DM Mono', monospace;
-	--font-helvetica-neue: 'HelveticaNeue', sans-serif;
+  --font-gabarito: "Gabarito", sans-serif;
+  --font-dm-mono: "DM Mono", monospace;
+  --font-helvetica-neue: "HelveticaNeue", sans-serif;
+  --color: #000;
+  --font-size: 16px;
 }
 
 /*FONT DESCRPTIONS*/
 
 /* web font */
 @font-face {
-  font-family:"HelveticaNeue";
+  font-family: "HelveticaNeue";
   src: url("fonts/helvetica-neue/Helvetica\ Neue.ttf");
 }
 
 /*set the default font*/
-h1,h2{
-  font-weight:normal;
-  font-size: 16px;
-  color: black;
+h1,h2 {
+  font-weight: normal;
 }
 
 a{
-  color:black;
+  color: var(--color);
   text-decoration: none;
 }
 
-a:hover{
-  text-decoration:underline;
+a:hover {
+  text-decoration: underline;
 }
 
 main{
-  padding-top: 54px;
-  margin:auto;
-  width:100%;
+  margin: auto;
+  width: 100%;
+  max-width: 1280px;
 }
 
 /*HEADER ELEMENTS*/
@@ -42,19 +100,19 @@ header{
   justify-content: space-between;
   box-sizing: border-box;
   padding: 20px 23px;
-  border-bottom:1px solid;
+  border-bottom: 1px solid;
 }
 
-header p{
+header p {
   font-family: var(--font-gabarito);
-  font-weight:600;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 27px;
 }
 
 .header-container{
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+}
 
 .menu-button{
   display: flex;
@@ -64,69 +122,81 @@ header p{
 }
 
 .menu-line{
-  width:18px;
-  height:2px;
-  background:black;
+  width: 18px;
+  height: 2px;
+  background: black;
 }
 
 /* HOMEPAGE */
 .main-title{
-  width:321px;
-  margin:50px auto 70px;
+  width: 1122px;
+  margin: 90px auto 70px;
 }
 
-.main-title p {
+.main-title p{
   font-family: var(--font-gabarito);
-  font-weight:600;
-  font-size: 70px;
-  line-height: 55px;
+  font-weight: 600;
+  font-size: 130px;
+  line-height: 100px;
+  margin-bottom: initial;
 }
 
 .main-title p.author{
-  margin-top: 30px;
-  font-family: var(--font-dm-mono);
-  font-weight: 500;
-  font-size:13px;
+  margin-top: 80px;
+  font-family: DMMono-Medium;
+  font-size: 24px;
+  line-height: initial;
 }
 
 /* NAVIGATION */
 .menu{
   font-family: var(--font-gabarito);
-  font-weight:600;
+  font-weight: 600;
   margin-top: 80px;
   box-sizing: border-box;
   border-bottom: 1px solid;
-  position:relative;
+  position: relative;
   font-size: 23px;
   line-height: 60px;
 }
 
 .menu li{
-  border-top:1px solid;
-  padding-left: 28px;
+  border-top: 1px solid var(--color);
+  padding: 0 92px;
+}
+
+.menu li div{
+  border-left: 1px solid var(--color);
+  border-right: 1px solid var(--color);
+  padding: 0 30px;
+  height: 70px;
 }
 
 li.clickbutton{
   position: absolute;
-  top: -65px;
-  left: 264px;
-  width: 77px;
-  height: 77px;
-  border: 1px solid;
-  border-radius: 39px;
+  top: -137px;
+  left: 1043px;
+  width: 151px;
+  height: 151px;
+  border: 1px solid var(--color);
+  border-radius: 75px;
   padding-left: 0;
   flex-direction: column;
   justify-content: center;
   background-color: white;
   display: flex;
-  line-height: 20px;
-  font-size: 16px;
+  padding: 0;
 }
 
 .clickbutton p{
   text-align: center;
   font-family: var(--font-gabarito);
-  font-weight:500;
+  font-weight: 500;
+}
+
+.clickbutton a{
+  line-height: 28px;
+  font-size: 26px;
 }
 
 /* ARTICLE HEADINGS */
@@ -136,109 +206,112 @@ section.part{
 }
 
 section.title-part{
-  border:1px solid;
+  border: 1px solid var(--color);
   border-left: none;
-  border-right:none;
-  padding-left: 27px;
+  border-right: none;
+  padding-left: 92px;
   box-sizing: border-box;
 }
 
 section.title-part h2{
   font-family: var(--font-dm-mono);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 70px;
   text-align: center;
-  border-left: 1px solid;
-  border-right: 1px solid;
+  border-left: 1px solid var(--color);
+  border-right: 1px solid var(--color);
 }
 
 /* Part1 THE CONTEXT */
-.part1 {
-  margin-top:79px;
+.part1{
+  margin-top: 79px;
 }
 
 .part1 h2{
-  width: 136px;
+  width: 221px;
 }
 
 .a1{
-  margin-top: 40px;
-  width: 324px;
-  margin-left: 27px;
+  margin-top: 60px;
+  width: 606px;
+  margin-left: 92px;
 }
 
-article p {
+section p{
   font-family: var(--font-helvetica-neue);
-  font-size:16px;
+  font-size: 25px;
   margin-bottom: 30px;
 }
 
 /* to set the first letter of each paragraph is capital */
-article p:first-letter{
-  text-transform:uppercase;
+section p:first-letter{
+  text-transform: uppercase;
 }
 
 /* Part2 WHAT IS AUTO-TUNE TYPE */
 .part2{
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .part2 h2{
-  width: 242px;
+  width: 386px;
 }
 
-.part2-desc {
-  width: 321px;
-  margin:50px auto 40px;
+.part2-desc{
+  width: 395px;
+  margin: 50px auto 40px;
+}
+
+.part2-content{
+  width: 601px;
 }
 
 .part2-desc p{
   font-family: var(--font-gabarito);
-  font-weight:500;
-  font-size:33px;
-  line-height:10px;
-  text-align:center;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .a2{
-  width:321px;
-  margin-top: 30px;
-  margin-left: 27px;
+  margin-top: 60px;
+  margin-left: 92px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /* Part3 THE IMPACT */
 .part3{
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
-.part3 h2 {
-  width: 126px;
+.part3 h2{
+  width: 206px;
 }
 
-.a3{
-  width: 317px;
-  margin-top: 60px;
-  margin-left:27px ;
-}
-
-.a4,.a5{
-  width: 321px;
-  margin-top: 60px;
-  margin-left: 27px;
+.a3,.a4,.a5{
+  margin-top: 80px;
+  margin-left: 92px;
+  width: 601px;
 }
 
 /* Part4 WHAT SHOULD WE DO */
 .part4{
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .part4 h2{
-  width: 194px;
+  width: 312px;
 }
 
 /* Part5 THE CONCLUSION */
+.part5{
+  margin-top: 100px;
+}
 .part5 h2{
-  width: 165px;
+  width: 266px;
 }
 
 /* Part6  */
@@ -258,44 +331,189 @@ article p:first-letter{
 
 .part6 .topp{
   position: absolute;
-  left: 294px;
-  top:-50px;
-  width:57px;
-  height:57px;
-  border-radius:50%;
-  border:1px solid;
-  display:flex;
-  align-items:center;
+  left: 1104px;
+  top: -90px;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  border: 3px solid var(--color);
+  display: flex;
+  align-items: center;
   justify-content: center;
   background-color: white;
 }
 
 .top-btn{
-  position:relative ;
-  width: 30px;
-  height:30px;
-  cursor:pointer;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
 }
 
 .top-btn::before{
   content: "";
-  width: 10px;
-  height:10px;
-  border: solid;
-  border-width:2px 2px 0 0;
-  transform: translate(-50%,-50%) rotate(-45deg); 
-  position:absolute;
-  left:50%;
-  top:45%;
+  width: 20px;
+  height: 20px;
+  border: solid var(--color);
+  border-width: 4px 4px 0 0;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
+  left: 50%;
+  top: 45%;
 }
 /* rotate:(-45deg)= to rotate 45 degrees counterclockwise */
 
 .top-btn::after{
   content: "";
-  width:2px;
-  height:18px;
-  background: black;
+  width: 4px;
+  height: 36px;
+  background: var(--color);
   position: absolute;
-  top: 25%;
-  left:47%;
+  top: 23%;
+  left: 47%;
+}
+
+@media (max-width: 1279px){
+  main {
+    max-width: 375px;
+  }
+  .main-title {
+    width: 321px;
+    margin: 50px auto 70px;
+  }
+  .main-title p {
+    font-size: 70px;
+    line-height: 55px;
+  }
+  .main-title p.author {
+    margin-top: 30px;
+    font-family: DMMono-Medium;
+    font-size: 13px;
+  }
+  .menu li {
+    padding-left: 28px;
+    padding: 0;
+  }
+  .menu li div {
+    height: 60px;
+    border: none;
+  }
+  li.clickbutton {
+    top: -65px;
+    left: 264px;
+    width: 77px;
+    height: 77px;
+    border-radius: 39px;
+  }
+
+  li.clickbutton a {
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .clickbutton p {
+  }
+
+  section.title-part {
+    padding-left: 27px;
+  }
+
+  section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  section.title-part h2 {
+    font-size: 16px;
+    height: initial;
+    line-height: 36px;
+  }
+
+  .part1 {
+    margin-top: 79px;
+  }
+  .part1 h2 {
+    width: 136px;
+  }
+  .part2 {
+    margin-top: 60px;
+  }
+  .part2 h2 {
+    width: 242px;
+  }
+  .part3 {
+    margin-top: 60px;
+  }
+  .part3 h2 {
+    width: 126px;
+  }
+  .part4 {
+    margin-top: 80px;
+  }
+
+  .part4 h2 {
+    width: 194px;
+  }
+  .part5 h2 {
+    width: 165px;
+  }
+  .a1 {
+    margin-top: 40px;
+    width: 324px;
+    margin-left: 27px;
+  }
+  .a2 {
+    width: 321px;
+    margin-top: 30px;
+    margin-left: 27px;
+    display: block;
+  }
+  .a2 .part2-content {
+    width: 321px;
+  }
+  .part2-desc {
+    /* display: none; */
+    width: 321px;
+  }
+  .part2-desc p {
+    font-size: 33px;
+    line-height: 30px;
+  }
+  .a3 {
+    width: 317px;
+    margin-top: 60px;
+    margin-left: 27px;
+  }
+  .a4,
+  .a5 {
+    width: 321px;
+    margin-top: 60px;
+    margin-left: 27px;
+  }
+
+  .part6 .topp {
+    left: 294px;
+    top: -50px;
+    width: 57px;
+    height: 57px;
+    border: 1px solid;
+  }
+  .top-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .top-btn::before {
+    width: 10px;
+    height: 10px;
+    border-width: 2px 2px 0 0;
+    left: 50%;
+    top: 45%;
+  }
+  .top-btn::after {
+    content: "";
+    width: 2px;
+    height: 18px;
+    top: 28%;
+    left: 49%;
+  }
 }
