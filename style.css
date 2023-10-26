@@ -169,15 +169,20 @@ article p:first-child {
   text-align: center;
 }
 
-
-
+  /* MEDIA QUERIES */
 
 @media screen and (min-width: 750px) {
+
   /* VARIABLES */
-  :root {
-    --margin-left: 80px;
-    --margin-right: 80px;
-  }
+:root {
+   --margin-left: 80px;
+   --margin-right: 80px;
+}
+
+h1{
+    font-size: 100px;
+    line-height: 80px;
+}
 
 /* NAVIGATION */
 .table-of-contents li {
@@ -199,7 +204,20 @@ h2{
   font-size: 22px;
 }
 
+/* ARTICLE PARAGRAPHS */
 article p{
   font-size: 22px;
+}
+
+.pull-quote p{
+  font-size: 45px;
+  line-height: 5px;
+}
+.section2paragraph{
+  margin-left: var(--margin-left);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
 }
