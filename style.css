@@ -32,6 +32,8 @@
 
 /*HEADER ELEMENTS*/
 header{
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 20px 23px;
@@ -43,12 +45,15 @@ header p{
   font-weight:700;
   font-size: 27px;
   letter-spacing: -4px;
+  margin-bottom: -5px;
 }
 
 .header-container{
-    display: flex;
-    align-items: center;
-  }
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10000;
+}
 
 .menu-button{
   display: flex;
@@ -151,7 +156,7 @@ article p{
   margin-left: var(--margin-left);
   margin-right: var(--margin-right);
   min-width: 330px;
-  max-width: 500px;
+  max-width: 450px;
 }
 article p:last-child {
   margin-bottom: 50px;
@@ -165,13 +170,13 @@ article p:first-child {
   font-family: var(--font-gabarito);
   font-weight: 600;
   font-size: 33px;
-  line-height: 2px;
+  line-height: 1px;
   text-align: center;
 }
 
   /* MEDIA QUERIES */
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
 
   /* VARIABLES */
 :root {
@@ -207,16 +212,18 @@ h2{
 /* ARTICLE PARAGRAPHS */
 article p{
   font-size: 22px;
+  max-width: 550px;
 }
 
 .pull-quote p{
-  font-size: 45px;
-  line-height: 5px;
+  font-size: 55px;
+  line-height: 15px;
 }
 .section2paragraph{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
 }
 }
