@@ -151,7 +151,7 @@ article p{
   margin-left: var(--margin-left);
   margin-right: var(--margin-right);
   min-width: 330px;
-  max-width: 450px;
+  max-width: 500px;
 }
 article p:last-child {
   margin-bottom: 50px;
@@ -214,10 +214,9 @@ article p{
   line-height: 5px;
 }
 .section2paragraph{
-  margin-left: var(--margin-left);
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 }
