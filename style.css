@@ -225,17 +225,29 @@ article p:first-child {
   background-color: white;
 }
 
+.arrow-line {
+  height: 4px;
+  background: black;
+  position: absolute;
+  left: 50%;
+  transform-origin: center;
+}
 
+.middle-line {
+  width: 45px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
 
+.left-line {
+  width: 22.5px;
+  transform: translateX(-18px) translateY(-14.5px) rotate(-45deg);
+}
 
-
-
-
-
-
-
-
-
+.right-line {
+  width: 22.5px;
+  transform: translateX(-4.5px) translateY(-14.5px) rotate(45deg);
+}
 
 /* MEDIA QUERIES */
 
@@ -314,4 +326,21 @@ article p{
 .scrolling-text {
   font-size: 22px;
 }
+
+.middle-line {
+  width: 50px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+.left-line {
+  width: 25px;
+  transform: translateX(-20px) translateY(-16px) rotate(-45deg);
+}
+
+.right-line {
+  width: 25px;
+  transform: translateX(-5px) translateY(-16px) rotate(45deg);
+}
+
 }
