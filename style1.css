@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
 
 
 /* WEB FONT */
@@ -20,23 +20,25 @@
 :root {
     --font-gabarito: 'Gabarito', sans-serif;
     --font-dm-sans: 'DM Sans', sans-serif;
-	--font-dm-mono: 'DM Mono', monospace;
-	--font-helvetica-neue: 'HelveticaNeue', sans-serif;
-    --font-caledea: font-family: 'Caladea', serif;
-    --font-sansita: font-family: 'Sansita', sans-serif;
-    --font-pixelify: font-family: 'Pixelify Sans', sans-serif;
-
+    --font-dm-mono: 'DM Mono', monospace;
+    --font-helvetica-neue: 'HelveticaNeue', sans-serif;
+    --font-caledea: 'Caladea', serif;
+    --font-sansita: 'Sansita', sans-serif;
+    --font-pixelify: 'Pixelify Sans', sans-serif;
 }
 
 /* MARGINS */
 :root {
 --margin-top: 50px;
 --margin-bottom: 50px;
---margin-left: 30px;
+--margin-left: 20px;
 --margin-right: 30px;
 --button-margin-top: 450px;
 }
 
+body{
+	background-color: #FFFEFB;
+}
 
 /* HEADER ELEMENTS */
 header{
@@ -78,18 +80,15 @@ header p{
 
 /* HOMEPAGE */
 h1{
-  font-family: var(--font-gabarito);
-  font-weight:600;
-  font-size: 70px;
-  line-height: 60px;
-  margin-top: var(--margin-top);
-  margin-bottom: var(--margin-bottom);
+  font-family: var(--font-caledea);
+  font-weight:400;
+  font-size: 42px;
+  line-height: 37px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   margin-left: var(--margin-left);
   margin-right: var(--margin-right);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+	text-align: center;
 }
 
 .author{
@@ -132,10 +131,11 @@ h1{
 
 /* NAVIGATION */
 nav{
-  font-family: var(--font-gabarito);
-  font-weight:600;
-  font-size: 23px;
+	font-family: var(--font-sansita);
+  font-weight: 400;
+  font-size: 32.5px;
   margin-bottom: var(--margin-bottom);
+  color: #2502D0;
 }
 
 .table-of-contents{
@@ -151,7 +151,7 @@ nav{
   border-style: solid;
   border-color: black;
   box-sizing: border-box;
-  padding-top: 15px;
+  padding-top: 8px;
   padding-bottom: 15px;
   padding-left: var(--margin-left);
   padding-right: 15px;
@@ -161,6 +161,16 @@ nav{
   border-top-width: 1px;
   border-bottom-width: 1px;
 }
+
+.small-text {
+  font-family: var(--font-gabarito);
+  font-size: 10px; /* Small font size for "01" */
+  color: #2502D0;
+  position: relative;
+  top: -14px;
+  margin-right: 5px; /* Add some space between "01" and "THE" */
+}
+
 
 /* ARTICLE HEADINGS */
 
@@ -174,17 +184,13 @@ h2 {
   padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
-  border-left: 1px solid;
-  border-right: 1px solid;
-  margin-left: var(--margin-left)
+  margin-left: var(--margin-left);
+	background-color: white; 
+  border: 1.5px solid black; 
+  color: #2502D0;
+	box-shadow: 5px 5px 0px 0px rgb(0, 0, 0);
 }
 
-.section-heading{
-  border:1px solid;
-  border-left: none;
-  border-right:none;
-  box-sizing: border-box;
-}
 
 /* ARTICLE PARAGRAPHS */
 
@@ -269,8 +275,8 @@ article p:first-child {
 
 /* HOMEPAGE */
 h1{
-    font-size: 150px;
-    line-height: 120px;
+    font-size: 70px;
+    line-height: 65px;
     display: block;
 }
 
@@ -297,7 +303,12 @@ h1{
 
 /* NAVIGATION */
 nav{
-  font-size: 30px;
+  font-size: 90px;
+}
+
+.small-text {
+  font-size: 20px; 
+  top: -45px;
 }
 
 .table-of-contents li {
