@@ -1,4 +1,4 @@
-/*IMPORTED FONTS*/
+/* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
@@ -13,7 +13,7 @@
 
 /*VARIABLES*/
 
-/*FONT*/
+/* FONT */
 :root {
 	--font-gabarito: 'Gabarito', sans-serif;
   --font-dm-sans: 'DM Sans', sans-serif;
@@ -21,7 +21,7 @@
 	--font-helvetica-neue: 'HelveticaNeue', sans-serif;
 }
 
-/*MARGINS*/
+/* MARGINS */
 :root {
 --margin-top: 50px;
 --margin-bottom: 50px;
@@ -31,7 +31,7 @@
 }
 
 
-/*HEADER ELEMENTS*/
+/* HEADER ELEMENTS */
 header{
   display: flex;
   align-items: center;
@@ -69,16 +69,20 @@ header p{
   background:black;
 }
 
-/*HOMEPAGE*/
+/* HOMEPAGE */
 h1{
   font-family: var(--font-gabarito);
   font-weight:600;
   font-size: 70px;
-  line-height: 52px;
+  line-height: 60px;
   margin-top: var(--margin-top);
   margin-bottom: var(--margin-bottom);
   margin-left: var(--margin-left);
   margin-right: var(--margin-right);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .author{
@@ -202,12 +206,11 @@ article p:first-child {
   text-align: center;
 }
 
-  /* FOOTER */
+/* FOOTER */
 .circle-footer{
   position: absolute;
   right: var(--margin-right); 
   max-width: calc(100% - 285px)
-  
 }
 
 .scrolling-text {
@@ -223,23 +226,40 @@ article p:first-child {
 }
 
 
-  /* MEDIA QUERIES */
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 700px) {
 
-  /* VARIABLES */
+/* VARIABLES */
 :root {
    --margin-left: 80px;
    --margin-right: 80px;
    --button-margin-top: 580px;
 }
 
+/* HOMEPAGE */
 h1{
     font-size: 100px;
     line-height: 80px;
+    display: block;
 }
 
-/*CLICK ME BUTTON*/
+.break br{
+  display: none; /* Hide the <br> element on smaller screens */
+}
+
+/* CLICK ME BUTTON */
 
 .circle-container {
   top: var(--button-margin-top);
