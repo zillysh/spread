@@ -27,7 +27,7 @@
 --margin-bottom: 50px;
 --margin-left: 30px;
 --margin-right: 30px;
---button-margin-top: 450px;
+--button-margin-top: 500px;
 }
 
 
@@ -98,19 +98,20 @@ h1{
 
 /*CLICK ME BUTTON*/
 
-.circle-container {
+.click-me-button{
   position: absolute;
   top: var(--button-margin-top);
   right: var(--margin-right); 
   max-width: calc(100% - 285px)
 }
 
-.circle {
+.circle{
   font-family: var(--font-gabarito);
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 17px;
   font-weight: 400;
-  width: 90px;
-  height: 90px;
+  width: 75px;
+  height: 75px;
   background-color: white;
   border-radius: 100%;
   border-width: 1px;
@@ -207,7 +208,7 @@ article p:first-child {
 }
 
 /* FOOTER */
-.circle-footer{
+.back-to-top-button{
   position: absolute;
   right: var(--margin-right); 
   max-width: calc(100% - 285px)
@@ -249,30 +250,135 @@ article p:first-child {
   transform: translateX(-4.5px) translateY(-14.5px) rotate(45deg);
 }
 
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1085px) {
+
+@media screen and (min-width: 500px) {
+h1{
+    font-size: 90px;
+    line-height: 70px;
+}
+
+/* ARTICLE PARAGRAPHS */
+article p{
+  font-size: 20px;
+  max-width: 640px;
+}
+
+.pull-quote p{
+  font-size: 45px;
+  line-height: 10px;
+}
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 707px) {
+h1{
+    font-size: 100px;
+    line-height: 80px;
+    display: block;
+}
+
+.break br{
+  display: none;
+}
+
+/* ARTICLE PARAGRAPHS */
+article p{
+  font-size: 20px;
+  max-width: 750px;
+}
+
+.pull-quote p{
+  font-size: 50px;
+  line-height: 13px;
+}
+
+}
+
+
+@media screen and (min-width: 768px) {  
+  article p{
+      font-size: 20px;
+      max-width: 400px;
+    }
+  
+  .pull-quote p{
+      font-size: 30px;
+      line-height: 9px;
+    }
+    
+  .section2paragraph{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+
+
+@media screen and (min-width: 1050px) {
+h1{
+    font-size: 120px;
+    line-height: 90px;
+  }
+
+article p{
+    font-size: 20px;
+    max-width: 450px;
+  }
+
+.pull-quote p{
+    font-size: 50px;
+    line-height: 13px;
+  }
+  
+.section2paragraph{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1400px) {
 
 /* VARIABLES */
 :root {
    --margin-left: 80px;
    --margin-right: 80px;
    --button-margin-top: 580px;
+   --base-size: 20px;
 }
 
 /* HOMEPAGE */
 h1{
     font-size: 150px;
     line-height: 120px;
-    display: block;
 }
 
 .author{
   font-size:20px;
-}
-
-.break br{
-  display: none; /* Hide the <br> element on smaller screens */
 }
 
 /* CLICK ME BUTTON */
@@ -290,20 +396,28 @@ h1{
 
 /* NAVIGATION */
 nav{
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .table-of-contents li {
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 1px;
-  padding-left: calc(var(--margin-left) + 30px);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: var(--margin-left);
+  padding-right: var(--margin-right);
 }
 
 .table-of-contents li:first-child {
   border-top-width: 1px;
   border-bottom-width: 1px;
+}
+
+li div {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-width: 1px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* ARTICLE HEADINGS */
@@ -318,7 +432,7 @@ article p{
 }
 
 .pull-quote p{
-  font-size: 55px;
+  font-size: 45px;
   line-height: 15px;
 }
 .section2paragraph{
