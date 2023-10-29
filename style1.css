@@ -78,6 +78,13 @@ header p{
   background:black;
 }
 
+/* SECTION */
+.neon-background{
+	background:#CAFF03;
+	height: 500px;
+	border-bottom: 1px solid black;
+}
+
 /* HOMEPAGE */
 h1{
   font-family: var(--font-caledea);
