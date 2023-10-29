@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
 
 
 /* WEB FONT */
@@ -15,10 +18,14 @@
 
 /* FONT */
 :root {
-	--font-gabarito: 'Gabarito', sans-serif;
-  --font-dm-sans: 'DM Sans', sans-serif;
+    --font-gabarito: 'Gabarito', sans-serif;
+    --font-dm-sans: 'DM Sans', sans-serif;
 	--font-dm-mono: 'DM Mono', monospace;
 	--font-helvetica-neue: 'HelveticaNeue', sans-serif;
+    --font-caledea: font-family: 'Caladea', serif;
+    --font-sansita: font-family: 'Sansita', sans-serif;
+    --font-pixelify: font-family: 'Pixelify Sans', sans-serif;
+
 }
 
 /* MARGINS */
@@ -52,7 +59,7 @@ header p{
 .header-container{
   position: sticky;
   top: 0;
-  background-color: tomato;
+  background-color: white;
   z-index: 10000;
 }
 
