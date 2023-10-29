@@ -251,7 +251,7 @@ article p:first-child {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1085px) {
 
 /* VARIABLES */
 :root {
@@ -262,9 +262,13 @@ article p:first-child {
 
 /* HOMEPAGE */
 h1{
-    font-size: 100px;
-    line-height: 80px;
+    font-size: 150px;
+    line-height: 120px;
     display: block;
+}
+
+.author{
+  font-size:20px;
 }
 
 .break br{
@@ -285,6 +289,9 @@ h1{
 }
 
 /* NAVIGATION */
+nav{
+  font-size: 30px;
+}
 
 .table-of-contents li {
   border-left-width: 0px;
