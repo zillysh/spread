@@ -357,6 +357,8 @@ header p{
 }
 
 .colors .head {
+  font-family: var(--font-dm-mono);
+  font-weight: 400;
   display: flex;
   margin-bottom: calc(1.875 * var(--font-size));
   flex-direction: column;
@@ -390,14 +392,10 @@ header p{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* 动画名称 */
+  text-align: center;
   animation-name: changeBg;
-  /* 动画时长 */
   animation-duration: 12s;
-  /* 动画速度曲线 */
   animation-timing-function: linear;
-  /* 动画循环次数 */
   animation-iteration-count: infinite;
 }
 
@@ -405,11 +403,13 @@ header p{
   margin: var(--margin-top-head-title) 0;
   height: calc(2.375 * var(--font-size));
   line-height: calc(2.375 * var(--font-size));
-  border-top: 2px solid var(--black);
-  border-bottom: 2px solid var(--black);
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
   position: relative;
 }
 .foot h2 {
+  font-family: var(--font-dm-mono);
+  font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
   font-size: var(--font-size);
@@ -782,7 +782,7 @@ header p{
     height: 106px;
     top: -96px;
     right: 10%;
-    border-width: 2px;
+    border-width: 1px;
   }
   .top-btn {
     width: 66px;
