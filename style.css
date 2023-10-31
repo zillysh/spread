@@ -300,7 +300,7 @@ section p:first-letter {
   height: 10px;
   border: solid var(--black);
   border-width: 2px 2px 0 0;
-  transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -60%) rotate(-45deg);
   position: absolute;
   left: 50%;
   top: 45%;
