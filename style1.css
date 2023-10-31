@@ -11,6 +11,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 
 ul,
@@ -42,6 +45,10 @@ li {
   --font-pixelify: 'Pixelify Sans', sans-serif;
   --font-audiowide: 'Audiowide', sans-serif;
   --font-vastshadow: 'Vast Shadow', serif;
+  --font-prosto: 'Prosto One', sans-serif;
+  --font-pinyonscript: 'Pinyon Script', cursive;
+  --font-poorstory: 'Poor Story';
+  --font-playfairdisplay: 'Playfair Display', serif;
 }
 
 
@@ -133,26 +140,45 @@ header p{
 }
 
 .banner .item3 {
-  left: 10%;
+  left: 5%;
   top: 270px;
 }
 
-.banner .item3 p {
+.banner .item3 .first-part {
   font-size: calc(5.875 * var(--font-size));
   line-height: calc(5.875 * var(--font-size));
   font-family: var(--font-pixelify);
   font-weight: 400;
 }
 
+.banner .item3 .second-part {
+  font-family: var(--font-prosto);
+  font-size: calc(5.875 * var(--font-size));
+}
+
+
 .banner .item4 {
-  left: 15%;
+  left: 8%;
   top: 360px;
 }
 
-.banner .item4 p {
+.banner .item4 .letter {
   font-size: calc(5 * var(--font-size));
   line-height: calc(5 * var(--font-size));
-  font-family: PlayfairDisplay;
+  font-family: var(--font-pixelify);
+  letter-spacing: -2px;
+}
+
+.banner .item4 .letter:nth-child(1) {
+  font-family: var(--font-playfairdisplay);
+}
+
+.banner .item4 .letter:nth-child(4) {
+  font-family: var(--font-poorstory);
+}
+
+.banner .item4 .letter:nth-child(6) {
+  font-family: var(--font-pinyonscript);
 }
 
 .clickbutton {

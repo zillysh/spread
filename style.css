@@ -98,16 +98,20 @@ h1 {
 
 .main-title p.author {
   margin-top: calc(4 * var(--font-size));
+  margin-bottom: 0;
   font-family: var(--font-dm-mono);
   font-size: calc(1 * var(--font-size));
   font-weight: 400;
-  line-height: calc(1.5 * var(--font-size));
+}
+
+.main-title p.author:last-of-type {
+  margin-top: 0; 
 }
 
 /* NAVIGATION */
 .menu {
   font-family: var(--font-gabarito);
-  font-weight: 500;
+  font-weight: 600;
   box-sizing: border-box;
   border-bottom: 1px solid;
   position: relative;
