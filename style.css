@@ -232,12 +232,12 @@ section p:first-letter {
   width: 242px;
 }
 .part2-desc {
-  margin-bottom: var(--margin-top-head-title);
+  margin-bottom: var(--margin-bottom);
 }
 .part2-desc p {
   font-family: var(--font-gabarito);
   font-weight: 600;
-  font-size: calc(2.0625 * var(--font-size));
+  font-size: calc(2 * var(--font-size));
   line-height: calc(2.0625 * var(--font-size));
   text-align: center;
   margin-bottom: 0;
