@@ -238,7 +238,7 @@ section p:first-letter {
   font-family: var(--font-gabarito);
   font-weight: 600;
   font-size: calc(2 * var(--font-size));
-  line-height: calc(1.9 * var(--font-size));
+  line-height: calc(1.8 * var(--font-size));
   text-align: center;
   margin-bottom: 0;
 }
