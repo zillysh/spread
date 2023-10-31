@@ -547,7 +547,7 @@ header p{
   }
   .part {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: end;
   }
   .part .art p {
     font-size: calc(4 * var(--font-size));
@@ -581,6 +581,7 @@ header p{
   }
   .part .mainBody {
     width: 60%;
+    padding-left: 5rem;
   }
   .color-container {
     height: 556px;
@@ -720,7 +721,7 @@ header p{
   }
   .part {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: end;
     padding: calc(2.5 * var(--base-size));
   }
   .part .art p {
@@ -743,6 +744,7 @@ header p{
   }
   .part .mainBody {
     width: 606px;
+    padding-left: 5rem;
   }
   .color-container .web {
     display: block;

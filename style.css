@@ -84,16 +84,15 @@ header p{
 
 /* HOMEPAGE */
 .main-title {
-  margin: calc(5 * var(--font-size)) auto;
+  margin: calc(3.5 * var(--font-size)) auto;
   padding: 0 calc(1.25 * var(--font-size));
 }
 
 h1 {
   font-family: var(--font-gabarito);
-  font-size: calc(4.375 * var(--font-size));
   font-weight: 600;
-  line-height: calc(4.375 * var(--font-size));
-  margin-bottom: initial;
+  font-size: calc(4.375 * var(--font-size));
+  line-height: calc(3.5 * var(--font-size));
 }
 
 .main-title p.author {
@@ -349,7 +348,7 @@ section p:first-letter {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
   }
   .part2-desc {
     width: 35%;
@@ -477,7 +476,8 @@ section p:first-letter {
     width: 601px;
   }
   .part2-desc {
-    width: 395px;
+    width: 700px;
+    padding-left: 10rem;
   }
   .a2 {
     padding: 0 calc(4.5 * var(--base-size));
