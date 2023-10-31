@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Gabarito:wght@400;500;600;700;800&family=Modak&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -20,16 +21,6 @@ li {
 @font-face {
   font-family: "DMMONO-MEDIUM";
   src: url("fonts/DM_Mono/DMMono-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Gabarito-Bold";
-  src: url("fonts/Gabarito/static/Gabarito-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Gabarito-SemiBold";
-  src: url("fonts/Gabarito/static/Gabarito-SemiBold.ttf");
 }
 
 @font-face {
@@ -77,11 +68,19 @@ li {
   --typo-h4: calc(2.25 * var(--font-size));
   --art-size: calc(9.375 * var(--font-size));
 }
-/*set the default font*/
-h1,
-h2 {
-  font-weight: normal;
+
+
+/* FONT */
+:root {
+  --font-gabarito: 'Gabarito', sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-dm-mono: 'DM Mono', monospace;
+  --font-helvetica-neue: 'HelveticaNeue', sans-serif;
+  --font-caledea: 'Caladea', serif;
+  --font-sansita: 'Sansita', sans-serif;
+  --font-pixelify: 'Pixelify Sans', sans-serif;
 }
+
 
 a {
   color: var(--black);
@@ -98,36 +97,42 @@ main {
   max-width: 100%;
 }
 
-/*HEADER ELEMENTS*/
-header {
+/* HEADER ELEMENTS */
+header{
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 20px 23px;
-  border-bottom: 1px solid;
+  border-bottom:1px solid;
 }
 
-header p {
-  font-family: var(--font-dmmono-medium);
-  font-weight: 600;
+header p{
+  font-family: var(--font-dm-sans);
+  font-weight:700;
   font-size: calc(1.6875 * var(--font-size));
+  letter-spacing: -4px;
+  margin-bottom: -5px;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
+.header-container{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10000;
 }
 
-.menu-button {
+.menu-button{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 18px;
+  height: 17px;
 }
 
-.menu-line {
-  width: 18px;
-  height: 2px;
-  background: black;
+.menu-line{
+  width:18px;
+  height:2px;
+  background:black;
 }
 
 .banner {
@@ -170,7 +175,8 @@ header p {
 .banner .item3 p {
   font-size: calc(5.875 * var(--font-size));
   line-height: calc(5.875 * var(--font-size));
-  font-family: PixelifySans;
+  font-family: var(--font-pixelify);
+  font-weight: 400;
 }
 
 .banner .item4 {
@@ -203,7 +209,7 @@ header p {
 .clickbutton p {
   text-align: center;
   font-family: var(--font-gabarito);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .clickbutton a {
@@ -229,8 +235,9 @@ header p {
 }
 
 .menu-title p {
-  font-family: DMMONO-MEDIUM;
-  font-size: calc(0.6875 * var(--font-size));
+  font-family: var(--font-dm-mono);
+  font-weight: 400;
+  font-size: calc(1 * var(--font-size));
 }
 
 /* NAVIGATION */
@@ -259,7 +266,8 @@ header p {
 
 .menu li div i {
   font-size: calc(0.5 * var(--font-size));
-  font-family: Gabarito-SemiBold;
+  font-family: var(--font-gabarito);
+  font-weight: 400;
   color: var(--blue-color);
   padding-top: 0;
   margin-right: calc(0.625 * var(--font-size));
@@ -268,7 +276,8 @@ header p {
 
 .menu li div a {
   color: var(--blue-color);
-  font-family: PixelifySans;
+  font-family: var(--font-sansita);
+  font-weight: 400;
   font-size: calc(2 * var(--font-size));
 }
 
@@ -283,6 +292,8 @@ header p {
 }
 
 .part h2 {
+  font-family: var(--font-dm-mono);
+  font-weight: 400;
   height: calc(2.375 * var(--font-size));
   line-height: calc(2.375 * var(--font-size));
   color: var(--blue-color);
@@ -292,12 +303,15 @@ header p {
   border: 2px solid var(--black);
   margin-bottom: 5px;
   border-color: var(--blue-color);
+  box-shadow: var(--black) 5px 5px;
+  border-color: var(--black);
 }
 
 .part .art p {
   font-size: var(--art-size);
   line-height: 100px;
-  font-family: PixelifySans;
+  font-family: var(--font-pixelify);
+  font-weight: 400;
   text-align: right;
   color: var(--orange-color);
 }
@@ -320,8 +334,6 @@ header p {
 
 .part1 h2 {
   width: 136px;
-  box-shadow: var(--black) 5px 5px;
-  border-color: var(--black);
 }
 
 .part2 h2 {
@@ -453,12 +465,14 @@ header p {
 
   15% {
     background-color: #caff03;
-    font-family: DMMONO-MEDIUM;
+    font-family: var(--font-dm-mono);
+    font-weight: 600;
   }
 
   30% {
     background-color: #ff733e;
-    font-family: Gabarito-Bold;
+    font-family: var(--font-gabarito);
+    font-weight: 600;
   }
 
   45% {
@@ -473,7 +487,8 @@ header p {
 
   80% {
     background-color: #ff4a6b;
-    font-family: PixelifySans;
+    font-family: var(--font-pixelify);
+    font-weight: 400;
   }
 
   100% {
