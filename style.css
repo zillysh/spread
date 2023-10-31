@@ -84,19 +84,20 @@ header p{
 
 /* HOMEPAGE */
 .main-title {
-  margin: calc(3.5 * var(--font-size)) auto;
+  margin-top: var(--margin-top);
+  margin-bottom: var(--margin-bottom);
   padding: 0 calc(1.25 * var(--font-size));
 }
 
 h1 {
   font-family: var(--font-gabarito);
   font-weight: 600;
-  font-size: calc(4.4 * var(--font-size));
-  line-height: calc(3.6 * var(--font-size));
+  font-size: calc(4.7 * var(--font-size));
+  line-height: calc(3.7 * var(--font-size));
 }
 
 .main-title p.author {
-  margin-top: calc(4 * var(--font-size));
+  margin-top: calc(3 * var(--font-size));
   margin-bottom: 0;
   font-family: var(--font-dm-mono);
   font-size: calc(1 * var(--font-size));
