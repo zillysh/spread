@@ -24,7 +24,7 @@ li {
 
 :root {
   --black: #000;
-  --font-size: 16px;
+  --font-size: 17px;
   --margin-top-head-title: calc(3.75 * var(--font-size));
   --blue-color: #2502d0;
   --orange-color: #ff733e;
