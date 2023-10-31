@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
 
 
 ul,
@@ -17,48 +18,8 @@ li {
   list-style: none;
 }
 
-/* web font */
-@font-face {
-  font-family: "DMMONO-MEDIUM";
-  src: url("fonts/DM_Mono/DMMono-Medium.ttf");
-}
-
-@font-face {
-  font-family: "HelveticaNeueMedium";
-  src: url("fonts/helvetica-neue/HelveticaNeue-Medium.otf");
-}
-
-@font-face {
-  font-family: "HelveticaNeue";
-  src: url("fonts/helvetica-neue/Helvetica\ Neue.ttf");
-}
-
-@font-face {
-  font-family: "Audiowide";
-  src: url("fonts/Audiowide/Audiowide-Regular.ttf");
-}
-
-@font-face {
-  font-family: "porter-sans";
-  src: url("fonts/porter_sans_block/porter-sans-inline-block-webfont.ttf");
-}
-
-@font-face {
-  font-family: "PixelifySans";
-  src: url("fonts/Pixelify_Sans/static/PixelifySans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "PlayfairDisplay";
-  src: url("fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
-}
 
 :root {
-  --font-gabarito: "Gabarito", sans-serif;
-  --font-dm-mono: "DM Mono", monospace;
-  --font-helvetica-neue: "HelveticaNeue", sans-serif;
-  --font-dmmono-medium: DMMONO-MEDIUM;
-  --font-gabarito-semiBold: Gabarito-SemiBold;
   --black: #000;
   --font-size: 16px;
   --margin-top-head-title: calc(3.75 * var(--font-size));
@@ -79,6 +40,8 @@ li {
   --font-caledea: 'Caladea', serif;
   --font-sansita: 'Sansita', sans-serif;
   --font-pixelify: 'Pixelify Sans', sans-serif;
+  --font-audiowide: 'Audiowide', sans-serif;
+  --font-vastshadow: 'Vast Shadow', serif;
 }
 
 
@@ -152,8 +115,10 @@ header p{
 .banner .item1 p {
   line-height: calc(7.5 * var(--font-size));
   font-size: calc(7.5 * var(--font-size));
-  font-family: "Audiowide";
+  font-family: var(--font-audiowide);
   margin-top: -35px;
+  -webkit-text-stroke: 2px black;
+  color: transparent
 }
 
 .banner .item2 {
@@ -162,9 +127,9 @@ header p{
 }
 
 .banner .item2 p {
-  font-size: calc(3.75 * var(--font-size));
+  font-size: calc(4.75 * var(--font-size));
   line-height: calc(3.75 * var(--font-size));
-  font-family: porter-sans;
+  font-family: var(--font-vastshadow);
 }
 
 .banner .item3 {
@@ -477,7 +442,7 @@ header p{
 
   45% {
     background-color: #00ac8c;
-    font-family: HelveticaNeueMedium;
+    font-family: var(--font-helvetica-neue);
   }
 
   60% {
