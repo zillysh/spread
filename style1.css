@@ -638,9 +638,6 @@ header p {
   :root {
     --base-size: 20px;
   }
-  main {
-    max-width: 1280px;
-  }
 
   .banner .item1 p {
     font-size: calc(16.5 * var(--base-size));
