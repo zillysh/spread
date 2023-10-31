@@ -31,7 +31,7 @@
   --margin-bottom: 50px;
   --margin-left: 30px;
   --margin-right: 30px;
-  --margin-top-head-title: calc(3.75 * var(--font-size));
+  --margin-top-head-title: 50px;
   }
   
 a {
@@ -232,13 +232,13 @@ section p:first-letter {
   width: 242px;
 }
 .part2-desc {
-  margin-bottom: var(--margin-bottom);
+  margin-bottom: var(--margin-top-head-title);
 }
 .part2-desc p {
   font-family: var(--font-gabarito);
   font-weight: 600;
   font-size: calc(2 * var(--font-size));
-  line-height: calc(2.0625 * var(--font-size));
+  line-height: calc(1.9 * var(--font-size));
   text-align: center;
   margin-bottom: 0;
 }
