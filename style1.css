@@ -15,10 +15,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
-
-ul,
-li {
-  list-style: none;
+/* WEB FONT */
+@font-face {
+  font-family:"HelveticaNeue";
+  src: url("fonts/helvetica-neue/Helvetica\ Neue.ttf");
 }
 
 /* FONT */
@@ -109,10 +109,6 @@ header p{
 
 .banner .item {
   position: absolute;
-}
-
-.banner .item1 {
-  overflow: hidden;
 }
 
 .banner .item1 p {
@@ -238,6 +234,11 @@ nav{
   color: #2502D0;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .table-of-contents{
   list-style-type: none;
   padding: 0;
@@ -315,7 +316,7 @@ nav{
 }
 
 .part .mainBody p {
-  font-size: var(--base-size);
+  font-size: var(--font-size);
   font-family: var(--font-helvetica-neue);
   margin-bottom: 30px;
 }
@@ -343,7 +344,6 @@ nav{
 .part5 h2 {
   width: 165px;
 }
-
 
 
 .colors {
@@ -491,28 +491,83 @@ nav{
   }
 }
 
+/* MEDIA QUERIES*/
+
+
+/* 550PX */
+@media screen and (min-width: 550px) {
+  :root {
+    --homepage-font-size: 19px;
+    --nav-font-size: 45px;
+    --nav-small-text: 12px;
+  }
+
+/* NAVIGATION */
+  nav{
+  font-size: var(--nav-font-size);
+}
+  .small-text {
+    font-size: var(--nav-small-text);
+    top: -21px;
+  }
+  .banner .item1 p {
+    line-height: calc(7.5 * var(--homepage-font-size));
+    font-size: calc(7.5 * var(--homepage-font-size));
+    margin-top: -35px;
+    -webkit-text-stroke: 3px black;
+  }
+
+  .banner .item2 p {
+    font-size: calc(4.75 * var(--homepage-font-size));
+    line-height: calc(3.75 * var(--homepage-font-size));
+  }
+
+  .banner .item3 .first-part {
+    font-size: calc(5.875 * var(--homepage-font-size));
+  }
+  
+  .banner .item3 .second-part {
+    font-size: calc(5.875 * var(--homepage-font-size));
+  }
+  
+  .banner .item4 .letter {
+    font-size: calc(5 * var(--homepage-font-size));
+    letter-spacing: -2px;
+  }
+
+}
+
+
+/* 768PX */
+
 @media screen and (min-width: 768px) {
   :root {
-    --font-size: 18px;
+    --font-size: 19px;
+    --homepage-font-size: 22px;
+    --nav-font-size: 55px;
+    --nav-small-text: 12px;
   }
+
+  .small-text {
+    top: -21px;
+  }
+
   .banner {
-    height: 672px;
+    height: 500px;
   }
   .banner .item2 {
-    top: 168px;
-    right: 10%;
+    top: 108px;
+    right: 0;
   }
-
   .banner .item3 {
-    left: 10%;
-    top: 340px;
+    left: 5%;
+    top: 250px;
   }
-
   .banner .item4 {
-    right: 10%;
-    top: 460px;
+    left: 8%;
+    top: 370px;
   }
-
+  
   .a1,
   .a3,
   .a4,
@@ -526,22 +581,11 @@ nav{
     align-items: center;
     justify-content: space-between;
   }
-  .part2-desc {
-    width: 35%;
-    margin-bottom: 0;
-  }
-  .part2-content {
-    width: 60%;
-  }
+  
   .clickbutton {
     width: 86px;
     height: 86px;
     bottom: -36px;
-  }
-  .part6 .topp {
-    width: 66px;
-    height: 66px;
-    top: -56px;
   }
 
   .top-btn {
@@ -584,7 +628,7 @@ nav{
   }
   .part .mainBody {
     width: 60%;
-    padding-left: 5rem;
+    padding-left: 2rem;
   }
   .color-container {
     height: 556px;
@@ -595,9 +639,7 @@ nav{
   .color-container .phone {
     display: none;
   }
-  .part .mainBody p {
-    font-size: calc(1.25 * var(--font-size));
-  }
+
   .colors .head {
     flex-direction: row;
     justify-content: space-between;
@@ -614,6 +656,9 @@ nav{
     order: 3;
   }
 }
+
+
+
 @media screen and (min-width: 992px) {
   :root {
     --font-size: 20px;
