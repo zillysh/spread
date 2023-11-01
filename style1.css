@@ -500,6 +500,7 @@ li {
     --homepage-font-size: 19px;
     --nav-font-size: 45px;
     --nav-small-text: 12px;
+    --background-height: 95px;
   }
 
 /* NAVIGATION */
@@ -510,6 +511,11 @@ li {
     font-size: var(--nav-small-text);
     top: -21px;
   }
+
+  .banner {
+    height: calc(5 * var(--background-height));
+  }
+
   .banner .item1 p {
     line-height: calc(7.5 * var(--homepage-font-size));
     font-size: calc(7.5 * var(--homepage-font-size));
@@ -546,14 +552,16 @@ li {
     --homepage-font-size: 22px;
     --nav-font-size: 55px;
     --nav-small-text: 12px;
+    --subheading-font-size: 19px;
+    --background-height: 100px;
   }
 
   .small-text {
-    top: -21px;
+    top: -28px;
   }
 
   .banner {
-    height: 500px;
+    height: calc(5 * var(--background-height));
   }
   .banner .item2 {
     top: 108px;
@@ -567,21 +575,7 @@ li {
     left: 8%;
     top: 370px;
   }
-  
-  .a1,
-  .a3,
-  .a4,
-  .a5 {
-    width: 80%;
-  }
-  .a2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
+
   .clickbutton {
     width: 86px;
     height: 86px;
@@ -597,8 +591,8 @@ li {
     justify-content: end;
   }
   .part .art p {
-    font-size: calc(4 * var(--font-size));
-    line-height: calc(4 * var(--font-size));
+    font-size: calc(4 * var(--subheading-font-size));
+    line-height: calc(3 * var(--subheading-font-size));
   }
   .art {
     display: block;
@@ -627,9 +621,10 @@ li {
     align-items: flex-end;
   }
   .part .mainBody {
-    width: 60%;
-    padding-left: 2rem;
+    width: 450px;
+    padding-left: 1.5rem;
   }
+  
   .color-container {
     height: 556px;
   }
@@ -659,150 +654,93 @@ li {
 
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   :root {
-    --font-size: 20px;
+    --font-size: 19px;
+    --homepage-font-size: 25px;
+    --nav-font-size: 65px;
+    --nav-small-text: 15px;
+    --subheading-font-size: 26px;
+    --background-height: 110px;
   }
-}
-@media screen and (min-width: 1280px) {
-  :root {
-    --base-size: 20px;
+
+  .small-text {
+    top: -28px;
   }
 
   .banner .item1 p {
-    font-size: calc(16.5 * var(--base-size));
-    line-height: calc(16.5 * var(--base-size));
-    margin-top: -55px;
-    margin-left: -20px;
+    line-height: calc(8.5 * var(--homepage-font-size));
+    font-size: calc(8.5 * var(--homepage-font-size));
+    margin-top: -45px;
+    -webkit-text-stroke: 4px black;
   }
 
   .banner .item2 {
-    top: 168px;
-    right: 0%;
-  }
-
-  .banner .item2 p {
-    font-size: calc(6.5 * var(--base-size));
-    line-height: calc(6.5 * var(--base-size));
+    top: 108px;
+    right: 0;
   }
   .banner .item3 {
-    left: 10%;
-    top: 360px;
+    left: 2%;
+    top: 250px;
   }
-
-  .banner .item3 p {
-    font-size: calc(7.5 * var(--base-size));
-    line-height: calc(7.5 * var(--base-size));
-  }
-
   .banner .item4 {
-    right: 10%;
-    top: 480px;
+    left: 7%;
+    top: 390px;
   }
-  .banner .item4 p {
-    font-size: calc(7.5 * var(--base-size));
-    line-height: calc(7.5 * var(--base-size));
+
+  .headline{
+    margin: calc(8 * var(--font-size)) auto;
   }
-  .headline p {
-    font-size: calc(4 * var(--base-size));
-    line-height: calc(4 * var(--base-size));
-  }
+
   .menu-title {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    padding: 0 calc(1.5 * var(--base-size));
-  }
-  .menu li div {
-    height: calc(6.25 * var(--base-size));
-    line-height: calc(6.25 * var(--base-size));
-    align-items: center;
-  }
-  .menu li div a {
-    font-size: calc(4.5 * var(--base-size));
-    line-height: calc(4.5 * var(--base-size));
-  }
-  .menu li div i {
-    font-size: calc(1.15 * var(--base-size));
-  }
-  .menu li {
-    padding: 0 calc(3.125 * var(--base-size));
-  }
-  .a1,
-  .a3,
-  .a4,
-  .a5 {
-    width: 80%;
-  }
-  .a2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-  }
-  .part2-desc {
-    width: 35%;
-    margin-bottom: 0;
-  }
-  .part2-content {
-    width: 60%;
-  }
-  .clickbutton {
-    width: 150px;
-    height: 150px;
-    bottom: -60px;
-  }
-  .clickbutton p {
-    font-size: calc(1.5 * var(--base-size));
-    line-height: calc(1.5 * var(--base-size));
-  }
-  .part6 .topp {
-    width: 66px;
-    height: 66px;
-    top: -56px;
+    margin-bottom: 20px;
+    padding-left: var(--margin-left);
+    padding-right: var(--margin-right);
   }
 
-  .top-btn {
-    width: 66px;
-    height: 66px;
-  }
-  .part {
-    flex-direction: row;
-    justify-content: end;
-    padding: calc(2.5 * var(--base-size));
-  }
-  .part .art p {
-    font-size: calc(7.5 * var(--base-size));
-    line-height: calc(7.5 * var(--base-size));
-  }
-  .art {
-    display: block;
-  }
-  .part h2 {
-    box-shadow: var(--black) 5px 5px;
-    border-color: var(--black);
-  }
-  .part4 h2 {
-    width: 214px;
-  }
-  .part .topic {
-    width: 500px;
-    align-items: flex-end;
-  }
   .part .mainBody {
-    width: 606px;
-    padding-left: 5rem;
+    width: 510px;
+    padding-left: 1.5rem;
   }
-  .color-container .web {
-    display: block;
+}
+
+
+
+
+@media screen and (min-width: 1220px) {
+  :root {
+    --font-size: 20px;
+    --homepage-font-size: 33px;
+    --nav-font-size: 65px;
+    --nav-small-text: 15px;
+    --subheading-font-size: 28px;
+    --background-height: 120px;
   }
-  .color-container .phone {
-    display: none;
+
+  .small-text {
+    top: -28px;
   }
-  .part .mainBody p {
-    font-size: calc(1.25 * var(--base-size));
+
+  .banner .item2 {
+    top: 60px;
+    right: 0;
   }
+  .banner .item3 {
+    left: 3%;
+    top: 230px;
+  }
+  .banner .item4 {
+    left: 9%;
+    top: 420px;
+  }
+
+
+
+
   .part1 h2 {
     width: 220px;
   }
