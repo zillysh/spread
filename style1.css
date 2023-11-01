@@ -277,7 +277,8 @@ li {
   display: flex;
   flex-direction: column;
   margin-top: var(--margin-top-head-title);
-  padding: 0 calc(1.25 * var(--font-size));
+  padding-left: calc(1.25 * var(--font-size));
+  padding-right: calc(1.25 * var(--font-size));
 }
 
 .part h2 {
@@ -715,14 +716,16 @@ li {
   :root {
     --font-size: 20px;
     --homepage-font-size: 33px;
-    --nav-font-size: 65px;
+    --nav-font-size: 80px;
     --nav-small-text: 15px;
-    --subheading-font-size: 28px;
+    --subheading-font-size: 30px;
     --background-height: 120px;
+    --margin-left: 45px;
+    --margin-right: 45px;
   }
 
   .small-text {
-    top: -28px;
+    top: -44px;
   }
 
   .banner .item2 {
@@ -738,8 +741,22 @@ li {
     top: 420px;
   }
 
+  .table-of-contents li {
+    padding-left: var(--margin-left);
+    padding-right: 15px;
+  }
 
+  .part {
+    padding-left: var(--margin-left);
+    padding-right: var(--margin-right);
+  }
 
+  .part .mainBody {
+    width: 600px;
+    padding-left: 1.5rem;
+  }
+
+ 
 
   .part1 h2 {
     width: 220px;
