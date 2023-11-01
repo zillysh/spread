@@ -39,10 +39,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 
 /* HEADER ELEMENTS */
 header{
@@ -140,6 +136,10 @@ li {
   font-family: var(--font-gabarito);
 }
 
+.menu a:hover {
+ font-weight: 700;
+}
+
 .clickbutton {
   position: absolute;
   top: -66px;
@@ -168,6 +168,15 @@ li {
   font-size: var(--font-size);
 }
 
+.clickbutton:hover {
+  background-color: #caff03;
+  border-color: black; 
+  box-shadow: 5px 2px black;
+}
+
+.clickbutton:hover p {
+  color: black;
+}
 
 
 /* ARTICLE HEADINGS */
@@ -663,12 +672,6 @@ h1 {
   .part2-content {
     max-width: 640px;
   }
-
-
-  .foot h2 {
-    font-size: calc(1.2 * var(--base-size));
-  }
-
 
   .foot .topp {
     width: 90px;

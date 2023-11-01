@@ -9,7 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
@@ -56,10 +56,6 @@
   --margin-top-head-title: calc(3.75 * var(--font-size));
   }
 
-
-a:hover {
-  text-decoration: underline;
-}
 
 
 /* HEADER ELEMENTS */
@@ -204,6 +200,16 @@ body{
   font-size: var(--font-size);
 }
 
+.clickbutton:hover {
+  background-color: white;
+  border-color: black; 
+  box-shadow: 5px 2px black;
+}
+
+.clickbutton:hover p {
+  color: black;
+}
+
 /* SECONDARY HOMEPAGE */
 .headline {
   height: 171px;
@@ -275,6 +281,10 @@ li {
   position: relative;
   top: -14px;
   margin-right: 5px;
+}
+
+.table-of-contents li:hover {
+  font-style: italic;
 }
 
 /* ARTICLE HEADINGS */
