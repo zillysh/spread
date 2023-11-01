@@ -101,6 +101,11 @@ header p{
 }
 
 /* HOMEPAGE ELEMENTS */
+
+body{
+	background-color: #FFFEFB;
+}
+
 .banner {
   height: 464px;
   background: #caff03;
@@ -295,6 +300,7 @@ li {
   border-color: var(--blue-color);
   box-shadow: var(--black) 5px 5px;
   border-color: var(--black);
+  background-color: white;
 }
 
 .art {
@@ -413,8 +419,6 @@ li {
   position: absolute;
   right: 5%;
   top: -46px;
-  width: 56px;
-  height: 56px;
   border-radius: 50%;
   border: 1px solid;
   display: flex;
@@ -425,18 +429,18 @@ li {
 
 .top-btn {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   cursor: pointer;
 }
 
 .top-btn::before {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border: solid var(--black);
-  border-width: 2px 2px 0 0;
-  transform: translate(-50%, -50%) rotate(-45deg);
+  border-width: 3px 3px 0 0;
+  transform: translate(-50%, -60%) rotate(-45deg);
   position: absolute;
   left: 50%;
   top: 45%;
@@ -444,7 +448,7 @@ li {
 
 .top-btn::after {
   content: "";
-  width: 2px;
+  width: 3px;
   height: 26px;
   background: var(--black);
   position: absolute;
@@ -455,7 +459,7 @@ li {
 @keyframes changeBg {
   0% {
     background-color: #2502d0;
-    font-family: PlayfairDisplay;
+    font-family: var(--font-playfairdisplay);
   }
 
   15% {
@@ -663,10 +667,11 @@ li {
     --nav-small-text: 15px;
     --subheading-font-size: 26px;
     --background-height: 110px;
+    --headline-font-size: 60px;
   }
 
   .small-text {
-    top: -28px;
+    top: -32px;
   }
 
   .banner .item1 p {
@@ -693,6 +698,11 @@ li {
     margin: calc(8 * var(--font-size)) auto;
   }
 
+  .headline p {
+    font-size: var(--headline-font-size);
+    line-height: var(--headline-font-size);
+  }
+
   .menu-title {
     display: flex;
     flex-direction: row;
@@ -707,18 +717,54 @@ li {
     width: 510px;
     padding-left: 1.5rem;
   }
+
 }
 
 
+@media screen and (min-width: 992px) {  
+  
+.clickbutton {
+  width: 110px;
+  height: 110px;
+  top: 470px;
+}
+
+.clickbutton p{
+  font-size: 23px;
+  line-height: calc(1.2 * var(--font-size));
+}
+}
 
 
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 1120px) {
+  :root {
+    --homepage-font-size: 29px;
+  }
+
+  .banner .item2 {
+    top: 60px;
+    right: 0;
+  }
+  .banner .item3 {
+    left: 3%;
+    top: 230px;
+  }
+  .banner .item4 {
+    left: 9%;
+    top: 400px;
+  }
+
+}
+
+
+@media screen and (min-width: 1282px) {
   :root {
     --font-size: 20px;
     --homepage-font-size: 33px;
     --nav-font-size: 80px;
     --nav-small-text: 15px;
     --subheading-font-size: 30px;
+    --headline-font-size: 70px;
     --background-height: 120px;
     --margin-left: 45px;
     --margin-right: 45px;
@@ -741,9 +787,25 @@ li {
     top: 420px;
   }
 
+  .clickbutton {
+    width: 130px;
+    height: 130px;
+    top: 510px;
+  }
+  
+  .clickbutton p{
+    font-size: 25px;
+    line-height: calc(1.2 * var(--font-size));
+  }
+
   .table-of-contents li {
     padding-left: var(--margin-left);
     padding-right: 15px;
+  }
+
+  .headline{
+    margin-top: 150px;
+    margin-bottom: 180px;
   }
 
   .part {
@@ -755,8 +817,6 @@ li {
     width: 600px;
     padding-left: 1.5rem;
   }
-
- 
 
   .part1 h2 {
     width: 220px;
@@ -774,22 +834,24 @@ li {
     width: 200px;
   }
   .foot .topp {
-    width: 106px;
-    height: 106px;
-    top: -96px;
+    width: 90px;
+    height: 90px;
+    top: -75px;
     right: 10%;
     border-width: 1px;
   }
+
   .top-btn {
     width: 66px;
     height: 66px;
   }
+
   .top-btn::before {
     content: "";
     width: 20px;
     height: 20px;
     border: solid var(--black);
-    border-width: 2px 2px 0 0;
+    border-width: 3px 3px 0 0;
     transform: translate(-50%, -50%) rotate(-45deg);
     position: absolute;
     left: 50%;
@@ -797,11 +859,42 @@ li {
   }
   .top-btn::after {
     content: "";
-    width: 2px;
+    width: 3px;
     height: 40px;
     background: var(--black);
     position: absolute;
     top: 25%;
     left: 48%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --font-size: 20px;
+    --homepage-font-size: 35px;
+    --nav-font-size: 80px;
+    --nav-small-text: 15px;
+    --subheading-font-size: 30px;
+    --headline-font-size: 70px;
+    --background-height: 122px;
+    --margin-left: 50px;
+    --margin-right: 50px;
+  }
+
+  .small-text {
+    top: -44px;
+  }
+
+  .banner .item2 {
+    top: 60px;
+    right: 1%;
+  }
+  .banner .item3 {
+    left: 6%;
+    top: 230px;
+  }
+  .banner .item4 {
+    left: 11%;
+    top: 430px;
   }
 }
