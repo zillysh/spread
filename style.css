@@ -427,12 +427,19 @@ section p:nth-last-child(1) {
 
 /* 889PX */
 @media screen and (min-width: 889px) {
+  :root {
+    --margin-top: 65px;
+    --margin-bottom: 65px;
+  }
 
 h1 {
-  font-family: var(--font-gabarito);
-  font-weight: 600;
-  font-size: calc(4.7 * var(--font-size));
-  line-height: calc(3.7 * var(--font-size));
+  font-size: calc(5.7 * var(--font-size));
+  line-height: calc(4.7 * var(--font-size));
+}
+
+.main-title p.author {
+  font-size: 20px;
+  margin-top: calc(5 * var(--font-size));
 }
 
 /* PARAGRAPH WIDTHS */
@@ -471,6 +478,22 @@ h1 {
     --font-size: 20px;
     --margin-left: 40px;
     --margin-right: 40px;
+    --margin-top: 75px;
+    --margin-bottom: 75px;
+  }
+
+  h1 {
+    font-size: calc(7 * var(--font-size));
+    line-height: calc(6.3 * var(--font-size));
+  }
+
+  .main-title p.author {
+  font-size: 23px;
+  margin-top: calc(5 * var(--font-size));
+  }
+
+  .break br{
+    display: none;
   }
 
   .menu {
@@ -554,7 +577,13 @@ h1 {
     --font-size: 20px;
     --margin-left: 65px;
     --margin-right: 65px;
+    --margin-top:65px;
     --margin-top-head-title: 75px;
+  }
+
+  h1 {
+    font-size: calc(7.5 * var(--font-size));
+    line-height: calc(6.5 * var(--font-size));
   }
 
   .menu {
